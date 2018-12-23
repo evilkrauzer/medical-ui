@@ -1,0 +1,21 @@
+.app-container{
+    .header {
+        display: flex;
+        align-items: center;
+        .header-name{
+            display: flex;
+            align-items: center;
+            font-family: Verdana;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+    }  
+
+    .container-body {
+        display: flex;
+
+        .studies-list {
+            border-right: 0.07143rem solid #d3d4d5;
+        }
+    }
+}

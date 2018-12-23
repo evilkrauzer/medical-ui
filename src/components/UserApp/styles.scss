@@ -1,0 +1,161 @@
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-container{
+    .header {
+        display: flex;
+        align-items: center;
+        background-color: #0079be;;
+        height: 40px;
+        padding-left: 5px;
+
+        .header-name{
+            color:white;
+            display: flex;
+            align-items: center;
+            font-family: Verdana;
+            font-size: 20px;
+
+            .name-icon{
+                display: flex;
+            }
+
+            .title{
+                padding-left:3px;
+            }
+            .icon-svg{
+                filter:invert(1);
+            }
+
+        }
+    }  
+
+    .container-body {
+        display: flex;
+
+        .studies-list-container {
+            width:20%;
+            border-right: 0.07143rem solid #d3d4d5;
+
+            .studies-list-header{
+                background-color: #F4F4F4;
+                margin-bottom: 0px;
+                border: 1px solid #dedfe0;
+
+                h3{
+                    margin:0;
+                    padding-left: 15px;
+                    padding-right: 6px;
+                    padding-bottom: 0.8225rem;
+                    padding-top: 0.8225rem;
+                    font-weight: 400;
+                }
+            }
+
+            .studies-container {
+                overflow: auto;
+                height: 400px;
+                border: 1px solid #dedfe0;
+
+            }
+
+            .studies-list{
+                padding: 0;
+                margin:0;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+            }
+
+            .study-item{
+
+                display: flex;
+                align-items:center;
+
+                .study-icon{
+                    margin-left: 1.2143rem;
+                    margin-right: 0.7143rem;
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    &.joined{
+                        background: #FF4136;;
+                    }
+                    &.not-started{
+                        background-color: #01FF70;
+                    }
+                    &.started {
+                        background-color: #0074D9;
+                    }
+                    &.unknown{
+                        background-color:black;
+                    }
+                    &.finished{
+                        background-color:aquamarine;
+                    }
+                }
+
+                &.is-selected{
+                    background-color: #f4f4f4;
+                    border-left: 0.5rem solid #007cc3;
+                    &:before{
+                        left:0;
+                    }
+                }
+                &:hover{
+                    background-color: #f5fafe;
+                }
+
+                .study-name{
+                    //ад копипасты, поставить чо нить нормальное
+
+                    padding-bottom: 0.8225rem;
+                    padding-top: 0.8225rem;
+                    display: flex;
+                    font-size: 1.071rem;
+                }
+            }
+        }
+
+        .right-body{
+            width:80%;
+            padding:15px;
+            padding-top:0px;
+
+            .study-first-header h1{
+                margin-bottom:10px;
+            }
+            .study-second-header h2{
+                margin-top:0;
+            }
+
+            .study-parameters{
+                >span {
+                    font-weight: bold;
+                }
+                .parameters-inputs{
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+                ul{
+                    margin-top: 5px;
+                    padding-left: 30px;
+                }
+            }
+
+            .study-parameter{
+                padding:5px;
+                padding-left:0px;
+                display: flex;
+
+                span{
+                    width:20%
+                }
+            }
+            
+        }
+    }
+}
